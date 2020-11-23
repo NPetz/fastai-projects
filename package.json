@@ -17,7 +17,5 @@
     "url": "https://github.com/NPetz/fastai-projects/issues"
   },
   "homepage": "https://github.com/NPetz/fastai-projects#readme",
-  "dependencies": {
-    "dropzone": "^5.7.2"
-  }
+  "dependencies": {}
 }
