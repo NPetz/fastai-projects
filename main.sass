@@ -1,0 +1,38 @@
+@use "sass:map"
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap')
+
+$grays: ("dark": #212529, "medium": #6C757D, "light": #F8F9FA)
+$primary: ("medium": #F25C54, "light": #F79D65)
+$accents: ("green": 400, "red": 500, "yellow": 700)
+
+body
+    margin: 0
+    padding: 0
+    background: map.get($grays, "dark")
+    color: map.get($grays, "light")
+    font-family: 'Fira Code', monospace
+    font-size: 100%
+    text-decoration: none
+
+nav
+    display: flex
+    margin: 0 0 2em 0
+    background: map.get($primary, "medium" )
+    box-shadow: 0px 2px 50px  map.get($primary, "medium" )
+    a
+        margin: 0.5em 1em
+        padding: 0.5em
+        color: inherit
+        text-shadow: 0px 0px 5px  map.get($grays, "light"), 0px 0px 5px  map.get($primary, "medium" ) ,  0px 0px 2px  white
+
+.project
+    padding: 1em
+    &:nth-child(odd)
+        background: map.get($grays,"light")
+
+.box__dragndrop,
+.box__uploading,
+.box__success,
+.box__error
+    display: none
